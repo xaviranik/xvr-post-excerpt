@@ -6,5 +6,4 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
-    'XVR\\Post_Excerpt\\Installer' => $baseDir . '/includes/Installer.php',
 );

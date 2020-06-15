@@ -20,16 +20,11 @@ class ComposerStaticInitd4a855c8c7a8c601cda20abc4e80ab82
         ),
     );
 
-    public static $classMap = array (
-        'XVR\\Post_Excerpt\\Installer' => __DIR__ . '/../..' . '/includes/Installer.php',
-    );
-
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
             $loader->prefixLengthsPsr4 = ComposerStaticInitd4a855c8c7a8c601cda20abc4e80ab82::$prefixLengthsPsr4;
             $loader->prefixDirsPsr4 = ComposerStaticInitd4a855c8c7a8c601cda20abc4e80ab82::$prefixDirsPsr4;
-            $loader->classMap = ComposerStaticInitd4a855c8c7a8c601cda20abc4e80ab82::$classMap;
 
         }, null, ClassLoader::class);
     }
