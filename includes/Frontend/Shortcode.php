@@ -25,8 +25,12 @@ class Shortcode {
         $output = "";
         $params = shortcode_atts([
             'posts_per_page' => 10,
-            'category' => '',
+            'category_name' => '',
         ], $attr);
+
+        if (isset($attr['post_ids'])) {
+            $params['post__in'] = explode('|', $attr['post_ids']);
+        }
 
         $query = new \WP_Query($params);
 
@@ -43,7 +47,4 @@ class Shortcode {
 
         return $output;
     }
-
-
-    
 }
