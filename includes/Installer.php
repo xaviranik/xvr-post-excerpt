@@ -6,6 +6,11 @@ namespace XVR\Post_Excerpt;
  * Installer Class
  */
 class Installer {
+	/**
+	 * Plugin runner
+	 *
+	 * @return void
+	 */
 	public function run() {
 		$this->add_version();
 	}
