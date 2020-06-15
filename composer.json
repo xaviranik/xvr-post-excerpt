@@ -1,0 +1,19 @@
+{
+    "name": "xavir/xvr-post-excerpt",
+    "description": "Post excerpt plugin for wordpress",
+    "license": "GPLv2",
+    "authors": [
+        {
+            "name": "Xavir Anik",
+            "email": "xaviranik.me@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "XVR\\Post_Excerpt\\": "includes/"
+        },
+        "files": []
+    }
+}
